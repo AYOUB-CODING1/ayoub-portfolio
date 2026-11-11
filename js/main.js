@@ -217,35 +217,44 @@
     };
   }
 
-  /* ---------- Certificate preview ---------- */
+  /* ---------- Image preview ---------- */
   var dialog = document.getElementById("cert-dialog");
-  var thumbs = Array.prototype.slice.call(document.querySelectorAll(".cert-thumb"));
-  if (dialog && thumbs.length) {
+  var galleries = [
+    Array.prototype.slice.call(document.querySelectorAll(".cert-thumb")),
+    Array.prototype.slice.call(document.querySelectorAll(".f1-gallery .image-thumb")),
+    Array.prototype.slice.call(document.querySelectorAll(".practice-gallery .image-thumb"))
+  ];
+  if (dialog && galleries.some(function (gallery) { return gallery.length > 0; })) {
     var cdImg = document.getElementById("cd-img");
     var cdCap = document.getElementById("cd-caption");
     var current = 0;
+    var currentGallery = [];
 
-    var showCert = function (i) {
-      current = (i + thumbs.length) % thumbs.length;
-      var t = thumbs[current];
+    var showImage = function (i) {
+      current = (i + currentGallery.length) % currentGallery.length;
+      var t = currentGallery[current];
       cdImg.src = t.getAttribute("data-large");
-      cdImg.alt = "Certificate: " + t.getAttribute("data-caption");
-      cdCap.textContent = (current + 1) + " of " + thumbs.length + ": " + t.getAttribute("data-caption");
+      var thumbnail = t.querySelector("img");
+      cdImg.alt = thumbnail ? thumbnail.alt : "Certificate: " + t.getAttribute("data-caption");
+      cdCap.textContent = (current + 1) + " of " + currentGallery.length + ": " + t.getAttribute("data-caption");
     };
-    var openCert = function (i) {
-      showCert(i);
+    var openImage = function (gallery, i) {
+      currentGallery = gallery;
+      showImage(i);
       if (typeof dialog.showModal === "function") dialog.showModal();
       else dialog.setAttribute("open", "");
     };
 
-    thumbs.forEach(function (t, i) { t.addEventListener("click", function () { openCert(i); }); });
-    document.getElementById("cd-prev").addEventListener("click", function () { showCert(current - 1); });
-    document.getElementById("cd-next").addEventListener("click", function () { showCert(current + 1); });
+    galleries.forEach(function (gallery) {
+      gallery.forEach(function (t, i) { t.addEventListener("click", function () { openImage(gallery, i); }); });
+    });
+    document.getElementById("cd-prev").addEventListener("click", function () { showImage(current - 1); });
+    document.getElementById("cd-next").addEventListener("click", function () { showImage(current + 1); });
     document.getElementById("cd-close").addEventListener("click", function () { dialog.close(); });
     dialog.addEventListener("click", function (e) { if (e.target === dialog) dialog.close(); });
     dialog.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowLeft") { e.preventDefault(); showCert(current - 1); }
-      if (e.key === "ArrowRight") { e.preventDefault(); showCert(current + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); showImage(current - 1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); showImage(current + 1); }
     });
   }
 

@@ -450,6 +450,38 @@ select:hover { border-color: var(--blue); }
   .has-art > .art { width: 4.25rem; height: 4.25rem; padding: 0.4rem; }
 }
 
+/* Project and practice image galleries */
+.image-gallery {
+  max-width: 62rem; margin-top: 1.75rem;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem; align-items: start;
+}
+.image-gallery figure { min-width: 0; }
+.image-gallery img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--rule); border-radius: 3px; background: var(--surface);
+}
+.image-thumb {
+  display: block; width: 100%; padding: 0; border: 0; background: transparent;
+  text-align: left; cursor: zoom-in;
+}
+.image-thumb:hover img { border-color: var(--blue); }
+.image-gallery figcaption {
+  margin-top: 0.5rem; color: var(--muted);
+  font-family: var(--sans); font-size: 0.8rem; line-height: 1.45;
+}
+.practice-block { margin-top: 2rem; }
+.subsection-title { font-size: var(--step-1); font-weight: 500; line-height: 1.2; }
+.practice-copy { max-width: var(--measure); margin-top: 0.45rem; color: var(--muted); font-size: 0.98rem; }
+.practice-gallery {
+  max-width: 58rem; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem;
+}
+@media (max-width: 42em) {
+  .practice-gallery { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+}
+.lab-links { max-width: 44rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.lab-links p { margin-top: 0.45rem; }
+
 /* Status chips */
 .chip { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.22rem 0.7rem; border-radius: 999px; background: var(--blue-wash); color: var(--blue-ink); font-family: var(--sans); font-size: 0.8rem; line-height: 1.3; }
 .chip::before { content: ""; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--blue); flex: none; }
