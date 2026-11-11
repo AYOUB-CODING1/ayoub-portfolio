@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayoub El Maadi — Mathematics, computer science and security</title>
+  <meta name="description" content="Portfolio of Ayoub El Maadi, founder of Cayvora Security and a student from Morocco interested in mathematics, computer science, AI and cybersecurity. Independent research, projects and responsible disclosure work.">
+  <meta name="author" content="Ayoub El Maadi">
+  <meta name="theme-color" content="#f5f6f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ayoub El Maadi — Mathematics, computer science and security">
+  <meta property="og:description" content="A student from Morocco exploring how mathematics, software and security fit together. Independent research, projects and responsible disclosure.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayoub El Maadi",
+    "description": "Student from Morocco interested in mathematics, computer science, AI and cybersecurity. Founder of Cayvora Security.",
+    "jobTitle": "Founder, Cayvora Security",
+    "worksFor": { "@type": "Organization", "name": "Cayvora Security", "url": "https://cayvora.com" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Taza", "addressCountry": "MA" },
+    "knowsAbout": ["Mathematics", "Computer science", "Cybersecurity", "Web application security", "Artificial intelligence"],
+    "sameAs": [
+      "https://www.linkedin.com/in/ayoub-el-maadi-b46b4737b",
+      "https://github.com/AYOUB-CODING1",
+      "https://cayvora.com"
+    ]
+  }
+  </script>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="shell">
+    <header class="rail" id="top">
+      <div class="rail-bar">
+        <a class="wordmark" href="#home">Ayoub El Maadi</a>
+        <div class="rail-actions">
+          <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path class="moon" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><g class="sun" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></svg>
+          </button>
+          <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        </div>
+      </div>
+      <nav id="site-nav" class="nav" aria-label="Sections">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#security">Cybersecurity</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#cayvora">Cayvora</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <!-- Home -->
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 id="hero-title" class="hero-name">Ayoub El&nbsp;Maadi</h1>
+            <p class="role">Founder of <a href="#cayvora">Cayvora Security</a></p>
+            <p class="lede">I’m a high-school student in Taza, Morocco, preparing to study computer science at university. What holds my attention is the point where mathematics, software and security meet, and one question in particular: if you can describe a transformation, can you also work out the way back?</p>
+            <p class="interests">Currently drawn to <span>mathematics</span>, <span>computer science</span>, <span>artificial intelligence</span> and <span>cybersecurity</span>.</p>
+          </div>
+          <figure class="plot-card">
+            <div id="plot" class="plot"></div>
+            <figcaption>Each dot is one of the 95 divisors of 27,720 that F-1 uses, drawn as <i>x</i> against <i>K</i>/<i>x</i> on logarithmic axes. A divisor and its partner <i>K</i>/<i>x</i> sit as mirror images across the diagonal. Pick a divisor below to move the highlight.</figcaption>
+          </figure>
+        </div>
+
+        <ul class="facts" aria-label="At a glance">
+          <li class="fact"><span class="fact-num">01</span><span class="fact-text"><strong>Independent Learning</strong> Learning through research, experimentation, and exploration.</span></li>
+          <li class="fact"><span class="fact-num">02</span><span class="fact-text"><strong>Security</strong> — Web, API, and Android security research.</span></li>
+          <li class="fact"><span class="fact-num">03</span><span class="fact-text"><strong>Mathematics</strong> — Exploring the mathematical foundations of computing and artificial intelligence.</span></li>
+          <li class="fact"><span class="fact-num">04</span><span class="fact-text"><strong>Building</strong> — Founder of Cayvora, developing practical cybersecurity tools.</span></li>
+        </ul>
+
+        <div class="instrument" id="instrument" aria-labelledby="inst-title">
+          <h2 id="inst-title" class="inst-title">A function, and the way back</h2>
+          <p class="inst-intro">This is the idea at the centre of my research project, F-1. The function <i>f</i>(<i>x</i>) = 1 − <i>K</i>/<i>x</i> has the exact inverse <i>f</i><sup>−1</sup>(<i>y</i>) = <i>K</i>/(1 − <i>y</i>), with <i>K</i> = 27,720. Choose a divisor of <i>K</i> and follow it there and back. All arithmetic uses whole numbers, so nothing is rounded.</p>
+
+          <div class="inst-controls">
+            <label for="divisor">Divisor <i>x</i> of 27,720</label>
+            <div class="inst-row">
+              <select id="divisor" name="divisor"></select>
+              <button type="button" class="btn" id="random-btn">Try another</button>
+            </div>
+          </div>
+
+          <div class="trace" id="trace" aria-live="polite">
+            <div class="trace-row"><span class="t-label">Divide</span><span class="t-expr"><i>K</i> / <i>x</i> = <span id="t-q" class="t-val"></span></span></div>
+            <div class="trace-row"><span class="t-label">Forward</span><span class="t-expr"><i>y</i> = <i>f</i>(<span id="t-x1"></span>) = 1 − <span id="t-q2"></span> = <span id="t-y" class="t-val"></span></span></div>
+            <div class="trace-row"><span class="t-label">Inverse</span><span class="t-expr"><i>f</i><sup>−1</sup>(<span id="t-y2"></span>) = 27,720 / (1 − <span id="t-y3"></span>) = <span id="t-d" class="t-val"></span></span></div>
+            <div class="trace-row trace-result"><span class="t-label">Recovered</span><span class="t-expr"><span id="t-rec" class="t-val"></span> <span id="t-ok" class="t-ok"></span></span></div>
+          </div>
+
+          <div class="inst-check">
+            <button type="button" class="btn btn-ghost" id="check-all">Check every divisor</button>
+            <p id="check-out" class="check-out" aria-live="polite">There are 96 divisors of 27,720. Leaving out 1 gives 95, the same number as the printable ASCII characters from space to “~”.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="block" aria-labelledby="about-title">
+        <h2 id="about-title" class="block-title">About</h2>
+        <div class="prose">
+          <p>I study Physical Sciences at a public high school in Taza and expect to sit the Moroccan Baccalaureate in June 2027. Mathematics is the subject I enjoy most, and I scored 20/20 on one mathematics assessment. Physics and analytical problem-solving sit close behind.</p>
+          <p>Most of my computer science has been self-directed. I finished Harvard’s CS50x in 2025, including all ten problem sets and a final project, a chessboard game. Alongside it I worked through hands-on labs on PortSwigger’s Web Security Academy and completed courses in ethical hacking, API security and blue-team fundamentals. Those courses are listed in the certifications section.</p>
+          <p>Reverse engineering gave me a habit I now bring to everything: treat a system as something to understand in both directions, then write down what must be true if the explanation is right, and test it. F-1, below, is the first project where I did that on purpose.</p>
+          <p>I’m looking for a university where I can deepen my mathematics, study computer science properly, and keep doing careful security research. My working languages are Arabic (native), English (good), French (intermediate) and German (beginner).</p>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section id="research" class="block" aria-labelledby="research-title">
+        <h2 id="research-title" class="block-title">Research</h2>
+
+        <div class="paper-wrap">
+        <figure class="cover" aria-hidden="true">
+          <span class="cover-kicker">Independent technical paper</span>
+          <span class="cover-big"><i>f</i><sup>−1</sup></span>
+          <span class="cover-eq"><i>f</i>(<i>x</i>) = 1 − <i>K</i>/<i>x</i></span>
+          <span class="cover-eq"><i>K</i> = 27,720</span>
+          <span class="cover-title">F-1</span>
+          <span class="cover-by">Ayoub El Maadi</span>
+        </figure>
+        <article class="paper">
+          <h3 class="paper-title">F-1: An Educational Reversible Mathematical Cipher</h3>
+          <p class="paper-sub">From an inverse function to a tested software model</p>
+          <p class="status">Independent technical paper, written during my study of reverse engineering. It has not been peer-reviewed or published in a journal.</p>
+
+          <h4 class="mini">Abstract</h4>
+          <p>F-1 is a small educational program that turns a mathematical idea, the relationship between a function and its inverse, into a reversible character transformation. It uses the positive divisors of 27,720 as a finite codebook, applies a rational function whose outputs are exact integers, and maps those values to printable characters. The paper explains the mathematics, the software structure, the verification strategy and the limits of the design. F-1 is a learning tool, not secure cryptography.</p>
+
+          <h4 class="mini">Key ideas</h4>
+          <dl class="ideas">
+            <div>
+              <dt>An inverse that is exact, not approximate</dt>
+              <dd>Because every input divides 27,720, the quotient <i>K</i>/<i>x</i> is always an integer. The forward function and its inverse therefore work in whole numbers only, with no floating point, rounding or truncation.</dd>
+            </div>
+            <div>
+              <dt>A domain that fits the problem</dt>
+              <dd>27,720 = 2³ × 3² × 5 × 7 × 11 has 96 positive divisors. Excluding 1 leaves 95, which matches the 95 printable ASCII characters.</dd>
+            </div>
+            <div>
+              <dt>Separating the math from the arrangement</dt>
+              <dd>A seed decides how characters are assigned to codebook values. It never changes <i>K</i>, <i>f</i> or its inverse, and the core logic lives in one module that the command line and the graphical interface share.</dd>
+            </div>
+            <div>
+              <dt>Testing properties, not examples</dt>
+              <dd>The project documents 28 categories of core self-test and a pytest suite of 40 cases. They check the inverse across the whole codebook, round trips for every supported character and for random and long messages, seed reproducibility, and rejection of unsupported or malformed input.</dd>
+            </div>
+            <div>
+              <dt>Stating the limits plainly</dt>
+              <dd>The mapping is deterministic for a given seed, so it can reveal patterns. A clean inverse is not the same thing as security, and F-1 should never protect real data.</dd>
+            </div>
+          </dl>
+
+          <p class="actions">
+            <a class="btn btn-primary" href="assets/F-1_Reversible_Mathematical_Cipher.pdf" target="_blank" rel="noopener">Read the paper (PDF, 4 pages)</a>
+            <a class="btn" href="assets/F-1_Reversible_Mathematical_Cipher.pdf" download>Download</a>
+          </p>
+        </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="block" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="block-title">Projects</h2>
+        <ul class="rows">
+          <li class="row has-art">
+            <svg class="art" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path d="M12 12V84H84" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><g fill="currentColor" opacity="0.55"><circle cx="18" cy="20" r="2.8"/><circle cx="26" cy="27" r="2.8"/><circle cx="34" cy="35" r="2.8"/><circle cx="50" cy="49" r="2.8"/><circle cx="66" cy="64" r="2.8"/><circle cx="74" cy="71" r="2.8"/><circle cx="82" cy="78" r="2.8"/></g><circle cx="42" cy="42" r="5.5" fill="currentColor"/><circle cx="58" cy="57" r="6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <div class="row-head">
+              <h3>F-1 reversible cipher</h3>
+              <p class="meta">Python, pytest</p>
+            </div>
+            <p>A character transformation built on a function and its exact inverse, with a command-line interface, an inspectable codebook and a graphical laboratory that shares the same mathematical core. Described in the paper above.</p>
+            <p class="links"><a href="#research">Read about it</a></p>
+          </li>
+          <li class="row has-art">
+            <svg class="art" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="14" y="14" width="20" height="20" rx="3"/><rect x="38" y="14" width="20" height="20" rx="3"/><rect x="62" y="14" width="20" height="20" rx="3"/><rect x="14" y="38" width="20" height="20" rx="3"/><rect x="38" y="38" width="20" height="20" rx="3"/><rect x="62" y="38" width="20" height="20" rx="3"/></g><rect x="14" y="62" width="20" height="20" rx="3" fill="currentColor"/></svg>
+            <div class="row-head">
+              <h3>Cayvora security tools</h3>
+              <p class="meta">Browser-based, client-side</p>
+            </div>
+            <p>Seven free utilities that run in the browser and, where applicable, never upload what you give them. They include a password strength checker, an image metadata stripper, an HTTP security headers scanner and a glossary of security terms in Moroccan Darija.</p>
+            <p class="links"><a href="https://tools.cayvora.com" target="_blank" rel="noopener">Open the tools</a></p>
+          </li>
+          <li class="row has-art">
+            <svg class="art" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><defs><pattern id="chk" width="16" height="16" patternUnits="userSpaceOnUse" x="16" y="16"><rect width="8" height="8" fill="currentColor"/><rect x="8" y="8" width="8" height="8" fill="currentColor"/></pattern></defs><rect x="16" y="16" width="64" height="64" fill="url(#chk)" opacity="0.8"/><rect x="16" y="16" width="64" height="64" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="52" cy="36" r="3.5" fill="currentColor"/></svg>
+            <div class="row-head">
+              <h3>Chessboard game</h3>
+              <p class="meta">CS50x final project, HTML</p>
+            </div>
+            <p>The final project for Harvard’s CS50x: a chessboard game I designed and built myself.</p>
+            <p class="links"><a href="https://github.com/AYOUB-CODING1/ayoub_chess" target="_blank" rel="noopener">View on GitHub</a></p>
+          </li>
+          <li class="row has-art">
+            <svg class="art" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="38" y="12" width="20" height="26" rx="2"/><rect x="28" y="38" width="40" height="46" rx="5"/></g><g fill="currentColor"><rect x="43" y="19" width="3.5" height="6"/><rect x="49.5" y="19" width="3.5" height="6"/><circle cx="48" cy="58" r="5.5"/><rect x="46" y="60" width="4" height="12" rx="1"/></g></svg>
+            <div class="row-head">
+              <h3>SecureUSB</h3>
+              <p class="meta">Web Crypto API, HTML</p>
+            </div>
+            <p>A lightweight web utility that encrypts and decrypts files in the browser using the Web Crypto API, aimed at files kept on a USB drive.</p>
+            <p class="links"><a href="https://github.com/AYOUB-CODING1/SecureUSB-By-ayoub-2025" target="_blank" rel="noopener">View on GitHub</a></p>
+          </li>
+        </ul>
+        <p class="aside">More small experiments, including a Python ICMP packet sender and a command runner, are on <a href="https://github.com/AYOUB-CODING1" target="_blank" rel="noopener">my GitHub profile</a>.</p>
+      </section>
+
+      <!-- Cybersecurity -->
+      <section id="security" class="block" aria-labelledby="security-title">
+        <h2 id="security-title" class="block-title">Cybersecurity</h2>
+        <div class="prose">
+          <p>I do independent security research on web applications, APIs and Android apps, and I report what I find to the people who can fix it. Until a fix ships, I keep the details private. That is why the entries below name no products and describe no techniques.</p>
+        </div>
+
+        <ul class="rows">
+          <li class="row">
+            <div class="row-head">
+              <h3>Directus</h3>
+              <p class="meta"><span class="chip chip-blue">Impact analysis, discussion with maintainers</span></p>
+            </div>
+            <p>While researching Directus I found an additional vulnerability and contributed to the impact analysis and discussion that led to the issue’s severity being raised from Medium to High. No CVE has been issued, and any contributor credit depends on the project’s final acknowledgement.</p>
+          </li>
+          <li class="row">
+            <div class="row-head">
+              <h3>Two WordPress plugins</h3>
+              <p class="meta"><span class="chip chip-amber">Reported, awaiting remediation</span></p>
+            </div>
+            <p>I reported a vulnerability in a plugin with more than 300,000 installations, and a stored cross-site scripting issue in another with more than 2,000. Coordinated disclosure is pending for both, so the products and technical details stay confidential.</p>
+          </li>
+          <li class="row">
+            <div class="row-head">
+              <h3>Android application research</h3>
+              <p class="meta"><span class="chip chip-amber">Undisclosed, awaiting vendor fixes</span></p>
+            </div>
+            <p>I analyse Android apps using reverse-engineering workflows, with some exposure to Ghidra, JADX and Frida. The issues I have found remain undisclosed while vendors respond.</p>
+          </li>
+          <li class="row">
+            <div class="row-head">
+              <h3>Practice and competition</h3>
+              <p class="meta"><span class="chip chip-green">Labs and CTF</span></p>
+            </div>
+            <p>I have completed hands-on labs on PortSwigger’s Web Security Academy. In the Hack The Box Morocco Meetups Summer CTF Cup (31 August to 1 September 2026) my team, CTF Learners, placed 34th of 311 teams, solving 11 of 12 challenges.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="block" aria-labelledby="cert-title">
+        <h2 id="cert-title" class="block-title">Certifications</h2>
+
+        <div class="table-wrap">
+          <table class="certs">
+            <caption class="sr-only">Certificates and the organisations that issued them</caption>
+            <thead>
+              <tr><th scope="col">Credential</th><th scope="col">Issued by</th></tr>
+            </thead>
+            <tbody>
+              <tr class="featured">
+                <th scope="row">CS50x: Introduction to Computer Science<span class="note">Ten problem sets and a final project</span></th>
+                <td>Harvard University</td>
+              </tr>
+              <tr>
+                <th scope="row">Ethical Hacker</th>
+                <td>Cisco Networking Academy</td>
+              </tr>
+              <tr>
+                <th scope="row">Certified LLM Security Professional (CLLMSP)</th>
+                <td>Red Team Leaders</td>
+              </tr>
+              <tr>
+                <th scope="row">Certified Blue Team Fundamentals</th>
+                <td>CyberWarFare Labs</td>
+              </tr>
+              <tr>
+                <th scope="row">Certified WiFi Pentesting 101</th>
+                <td>Cappriciosec University</td>
+              </tr>
+              <tr>
+                <th scope="row">OWASP API Security Top 10</th>
+                <td>APIsec University</td>
+              </tr>
+              <tr>
+                <th scope="row">API Security Fundamentals ’25</th>
+                <td>APIsec University</td>
+              </tr>
+              <tr>
+                <th scope="row">Cybersecurity Analyst Job Simulation (Tata)</th>
+                <td>Forage</td>
+              </tr>
+              <tr>
+                <th scope="row">Cybersecurity Job Simulation (Mastercard)</th>
+                <td>Forage</td>
+              </tr>
+              <tr>
+                <th scope="row">Introduction to Cybersecurity Awareness</th>
+                <td>HP LIFE</td>
+              </tr>
+              <tr>
+                <th scope="row">Hack The Box Morocco Meetups Summer CTF Cup (participation)</th>
+                <td>Hack The Box</td>
+              </tr>
+              <tr>
+                <th scope="row">Photoshop CC</th>
+                <td>M3arf platform</td>
+              </tr>
+              <tr>
+                <th scope="row">Software Engineering Basics</th>
+                <td>M3arf platform</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cert-preview" id="cert-preview">
+          <h3 class="cert-preview-title">Preview the certificates</h3>
+          <p class="cert-preview-sub">Select any certificate to view it larger, or download all thirteen as one PDF.</p>
+          <p class="actions">
+            <a class="btn btn-primary" href="assets/Ayoub_El_Maadi_Certificates.pdf" download>Download all 13 certificates (PDF)</a>
+            <a class="btn" href="assets/Ayoub_El_Maadi_Certificates.pdf" target="_blank" rel="noopener">Open in a new tab</a>
+          </p>
+          <ul class="cert-grid">
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-01.jpg" data-caption="CS50x: Introduction to Computer Science, Harvard University"><img src="assets/certs/thumb-01.jpg" width="560" height="396" loading="lazy" alt="Certificate: CS50x: Introduction to Computer Science, Harvard University"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-02.jpg" data-caption="Certified Blue Team Fundamentals, CyberWarFare Labs"><img src="assets/certs/thumb-02.jpg" width="560" height="396" loading="lazy" alt="Certificate: Certified Blue Team Fundamentals, CyberWarFare Labs"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-03.jpg" data-caption="Cybersecurity Job Simulation (Mastercard), Forage"><img src="assets/certs/thumb-03.jpg" width="560" height="396" loading="lazy" alt="Certificate: Cybersecurity Job Simulation (Mastercard), Forage"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-04.jpg" data-caption="Cybersecurity Analyst Job Simulation (Tata), Forage"><img src="assets/certs/thumb-04.jpg" width="560" height="396" loading="lazy" alt="Certificate: Cybersecurity Analyst Job Simulation (Tata), Forage"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-05.jpg" data-caption="OWASP API Security Top 10, APIsec University"><img src="assets/certs/thumb-05.jpg" width="560" height="396" loading="lazy" alt="Certificate: OWASP API Security Top 10, APIsec University"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-06.jpg" data-caption="Certified LLM Security Professional (CLLMSP), Red Team Leaders"><img src="assets/certs/thumb-06.jpg" width="560" height="396" loading="lazy" alt="Certificate: Certified LLM Security Professional (CLLMSP), Red Team Leaders"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-07.jpg" data-caption="Introduction to Cybersecurity Awareness, HP LIFE"><img src="assets/certs/thumb-07.jpg" width="560" height="396" loading="lazy" alt="Certificate: Introduction to Cybersecurity Awareness, HP LIFE"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-08.jpg" data-caption="API Security Fundamentals ’25, APIsec University"><img src="assets/certs/thumb-08.jpg" width="560" height="396" loading="lazy" alt="Certificate: API Security Fundamentals ’25, APIsec University"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-09.jpg" data-caption="Hack The Box Morocco Meetups Summer CTF Cup (participation), Hack The Box"><img src="assets/certs/thumb-09.jpg" width="560" height="396" loading="lazy" alt="Certificate: Hack The Box Morocco Meetups Summer CTF Cup (participation), Hack The Box"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-10.jpg" data-caption="Photoshop CC, M3arf platform"><img src="assets/certs/thumb-10.jpg" width="396" height="560" loading="lazy" alt="Certificate: Photoshop CC, M3arf platform"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-11.jpg" data-caption="Software Engineering Basics, M3arf platform"><img src="assets/certs/thumb-11.jpg" width="396" height="560" loading="lazy" alt="Certificate: Software Engineering Basics, M3arf platform"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-12.jpg" data-caption="Certified WiFi Pentesting 101, Cappriciosec University"><img src="assets/certs/thumb-12.jpg" width="560" height="396" loading="lazy" alt="Certificate: Certified WiFi Pentesting 101, Cappriciosec University"></button></li>
+            <li><button type="button" class="cert-thumb" data-large="assets/certs/large-13.jpg" data-caption="Ethical Hacker, Cisco Networking Academy"><img src="assets/certs/thumb-13.jpg" width="560" height="396" loading="lazy" alt="Certificate: Ethical Hacker, Cisco Networking Academy"></button></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Cayvora -->
+      <section id="cayvora" class="block" aria-labelledby="cayvora-title">
+        <h2 id="cayvora-title" class="block-title">Cayvora</h2>
+        <div class="band">
+        <div class="prose">
+          <p>Cayvora is an independent cybersecurity initiative I founded in Morocco. I built and maintain both of its websites myself. Its aim is to raise security awareness, and the clearest expression of that is a set of free tools that work in a person’s own browser, so a password or a photo never has to leave their device.</p>
+          <p>One of the seven is a glossary of cybersecurity terms in Moroccan Darija, so the vocabulary exists in the language many people use at home.</p>
+        </div>
+        <ul class="tiles" aria-label="The seven tools">
+          <li>Password strength checker</li>
+          <li>Image metadata stripper</li>
+          <li>Google Dork generator</li>
+          <li>Payload encoder and decoder</li>
+          <li>Darija terms glossary</li>
+          <li>Security headers scanner</li>
+          <li>Social media privacy checklist</li>
+        </ul>
+        <p class="actions">
+          <a class="btn btn-primary" href="https://tools.cayvora.com" target="_blank" rel="noopener">tools.cayvora.com</a>
+          <a class="btn" href="https://cayvora.com" target="_blank" rel="noopener">cayvora.com</a>
+        </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="block block-last" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="block-title">Contact</h2>
+        <div class="prose">
+          <p>I’m glad to hear from admissions teams, researchers and anyone curious about the work above. Email is the most reliable way to reach me.</p>
+        </div>
+        <ul class="contact-list">
+          <li><span class="c-label">Email</span><a href="mailto:ayoubemail010@gmail.com">ayoubemail010@gmail.com</a></li>
+          <li><span class="c-label">LinkedIn</span><a href="https://www.linkedin.com/in/ayoub-el-maadi-b46b4737b" target="_blank" rel="noopener">linkedin.com/in/ayoub-el-maadi-b46b4737b</a></li>
+          <li><span class="c-label">GitHub</span><a href="https://github.com/AYOUB-CODING1" target="_blank" rel="noopener">github.com/AYOUB-CODING1</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>Ayoub El Maadi, Taza, Morocco. Written and built by me.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </div>
+
+  <dialog id="cert-dialog" class="cert-dialog" aria-label="Certificate preview">
+    <div class="cd-bar">
+      <p id="cd-caption" class="cd-caption"></p>
+      <button type="button" class="btn cd-close" id="cd-close">Close</button>
+    </div>
+    <div class="cd-stage">
+      <button type="button" class="icon-btn cd-nav" id="cd-prev" aria-label="Previous certificate">&#8592;</button>
+      <img id="cd-img" alt="">
+      <button type="button" class="icon-btn cd-nav" id="cd-next" aria-label="Next certificate">&#8594;</button>
+    </div>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
